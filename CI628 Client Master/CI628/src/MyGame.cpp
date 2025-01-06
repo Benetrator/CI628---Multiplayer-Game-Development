@@ -195,23 +195,23 @@ void MyGame::Cleanup() {
 
 void MyGame::LoadTextures(SDL_Renderer* renderer) {
     // Load the texture for player 1
-    player1Texture = IMG_LoadTexture(renderer, "Z:/Uni work/CI628 - Multiplayer C++/CI628 Client Master/CI628/src/assets/images/player1_image.png");
+    player1Texture = IMG_LoadTexture(renderer, "assets/images/player1_image.png");
     if (!player1Texture) {
         std::cerr << "Failed to load player1 texture: " << SDL_GetError() << std::endl;
     }
 
     // Load the texture for player 2
-    player2Texture = IMG_LoadTexture(renderer, "Z:/Uni work/CI628 - Multiplayer C++/CI628 Client Master/CI628/src/assets/images/player2_image.png");
+    player2Texture = IMG_LoadTexture(renderer, "assets/images/player2_image.png");
     if (!player2Texture) {
         std::cerr << "Failed to load player2 texture: " << SDL_GetError() << std::endl;
     }
 
     // Load the bullet texture (once for all bullets)
-    SDL_Texture* bulletTexture = IMG_LoadTexture(renderer, "Z:/Uni work/CI628 - Multiplayer C++/CI628 Client Master/CI628/src/assets/images/bullet.png");
+    SDL_Texture* bulletTexture = IMG_LoadTexture(renderer, "assets/images/bullet.png");
     if (!bulletTexture) {
         std::cerr << "Failed to load bullet texture: " << SDL_GetError() << std::endl;
     }
-    wallTexture = IMG_LoadTexture(renderer, "Z:/Uni work/CI628 - Multiplayer C++/CI628 Client Master/CI628/src/assets/images/wall.png");
+    wallTexture = IMG_LoadTexture(renderer, "assets/images/wall.png");
     if (!wallTexture) {
         std::cerr << "Failed to load buwallllet texture: " << SDL_GetError() << std::endl;
     }
